@@ -1,0 +1,404 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <title> Carbon Nanotubes</title>
+  <link rel="stylesheet" href="Technical Document Page.css">
+</head>
+<>
+<nav id="navbar">
+  <header>Chapters</header>
+  <ul>
+    <li><a class="nav-link" href="#Abstract">Abstract</a></li>
+     <li><a class="nav-link" href="#Abreviations">Abreviations</a></li>
+     <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+     <li><a class="nav-link" href="#Structure_and_Properties_of_CNT's">Structure and Properties of CNT's</a></li>
+     <li><a class="nav-link" href="#Synthesis_of_CNT's">Synthesis of CNT's</a></li>
+
+   <div class="drpdwn">
+     <li><a class="nav-link" href="#Functionalisation_of_CNT's">
+    Functionalisation of CNT's
+    <i class="fa fa-caret-down"></i>
+       </a></li>
+  <div class="dropdown-container">
+    <li><a class="nav-link" href="#Covalent_Functionalisation">Covalent Functionalisation</a></li>
+    <li><a class="nav-link" href="#Non-Covalent_Functionalisation">Non-Covalent Functionalisation</a></li>
+     </div>
+      </div>
+
+    <li><a class="nav-link" href="#Drug_Loading_onto_f-CNT's">Drug Loading onto f-CNT's</a></li>
+     <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+    <li><a class="nav-link" href="#References">References</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+    <h1>Efficacy differences in alternative CNT Functionalisation Methods for Drug Delivery</h1>
+
+  <section class="main-section" id="Abstract">
+    <header>Abstract</header>
+    <article>
+      <p>
+        Carbon Nanotubes (CNTs) have accelerated in research in the last decade and have become a focal point of research for a varying number of applications. Specifically, drug delivery has shown significant promise due to the heterogenicity of the functionalised CNT (f-CNT), its manipulation and ability to overcome biological resistance procuring targeted drug applications. CNTs have shown that they can cross barriers via passive or active transport depending on their functionalisation showing great promise in becoming site specific. This does not come without its issues in that CNTs in their purified form are toxic and also maintain this property with impurities present post functionalisation. This paper aims to analyse the synthesis and functionalisation methods utilised for single walled CNTs (SWCNTs) and multi-walled CNTs (MWCNTs) identifying key variations between covalent and non-covalent mechanisms of functionalisation for drug delivery. The properties of each type will be explored accentuating the importance of functionalisation to overcome toxicity and hydrophobicity for targeted drug delivery. In addition, these methods will be discussed at depth to understand the complications of targeted drug delivery via this pathway looking at amidation linkages and the oxidation/reduction mechanisms required to achieve them. This will aim to look at the question of do particular conformations of the CNTs chirality directly effect the potential efficacy of drug delivery.
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Abreviations">
+    <header>Abreviations</header>
+    <article>
+      <p>Detailed list of all abreviations used in this article</p>
+      <ul id="controlled_list">
+        <li id="list" class="header">
+          <div class="listitem_abrev">Abreviation</div>
+          <div class="listitem_name">Name</div>
+        </li>
+        <li id="listitem_1" class="clearfix">
+          <div class="listitem_abrev">1,3-DC</div>
+          <div class="listitem_name">1,3-Dipole Cycloaddition</div>
+        </li>
+        <li id="listitem_2" class="clearfix">
+          <div class="listitem_abrev">ALG</div>
+          <div class="listitem_name">Sodium Alginate</div>
+        </li>
+        <li id="listitem_3" class="clearfix">
+          <div class="listitem_abrev">ATP</div>
+          <div class="listitem_name">Adenosine Triphosphate</div>
+        </li>
+        <li id="listitem_4" class="clearfix">
+          <div class="listitem_abrev">CCVD</div>
+          <div class="listitem_name">Catalytic Chemical Vapor Deposition</div>
+        </li>
+        <li id="listitem_5" class="clearfix">
+          <div class="listitem_abrev">CFT</div>
+          <div class="listitem_name">Crystal Field Theory</div>
+        </li>
+        <li id="listitem_6" class="clearfix">
+          <div class="listitem_abrev">CHI</div>
+          <div class="listitem_name">Chitosan</div>
+        </li>
+        <li id="listitem_7" class="clearfix">
+          <div class="listitem_abrev">CNT</div>
+          <div class="listitem_name">Carbon Nanotube</div>
+        </li>
+        <li id="listitem_8" class="clearfix">
+          <div class="listitem_abrev">CVD</div>
+          <div class="listitem_name">Chemical Vapor Deposition</div>
+        </li>
+        <li id="listitem_9" class="clearfix">
+          <div class="listitem_abrev">DOX</div>
+          <div class="listitem_name">Doxorubicin Hydrochloride</div>
+        </li>
+        <li id="listitem_10" class="clearfix">
+          <div class="listitem_abrev">f-CNT</div>
+          <div class="listitem_name">Functionalised Carbon Nanotube</div>
+        </li>
+
+        <li id="listitem_11" class="clearfix">
+          <div class="listitem_abrev">MWCNT</div>
+          <div class="listitem_name">Multi-Walled Carbon Nanotube</div>
+        </li>
+        <li id="listitem_12" class="clearfix">
+          <div class="listitem_abrev">PZA</div>
+          <div class="listitem_name">Pyrazinamide</div>
+        </li>
+        <li id="listitem_13" class="clearfix">
+          <div class="listitem_abrev">ROS</div>
+          <div class="listitem_name">Reactive Oxygen Species</div>
+        </li>
+        <li id="listitem_14" class="clearfix">
+          <div class="listitem_abrev">SWCNT</div>
+          <div class="listitem_name">Single Walled Carbon Nanotube</div>
+        </li>
+         <li id="listitem_15" class="clearfix">
+          <div class="listitem_abrev">VDW</div>
+          <div class="listitem_name">Van Der Waals Forces</div>
+        </li>
+
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+     <article>
+       <p>
+         CNTs are defined as a continuous unbroken chain of aromatic like molecules bound by sp2 geometry that allow for their cylindrical shape and unique properties. They form long thin structures with a derivative of fullerene capping each end. CNTs were discovered by S. Iijima (1991) and have since been a major focus in a vast range of applications. Utilising CNTs as carriers has now become ever increasing due to their relatively controllable properties. In the field of pharmacokinetics, the constructs of f-CNTs are of great interest in their ability to carry therapeutic agents to specific sites, coupled with the huge surface area make these a promising tool for the future. The works Pantarotto, D. et al. (2004) demonstrate the ability of covalently f-CNTs passing through cell membranes opening the way to a new era of pharmaceutical chemistry. The properties exhibited from purified CNTs range from very high tensile strength, Fredriksso, T. (2014) electrical and thermal capabilities. However, these also pose issues in relation to toxicity, solubility in solution and conjugation.
+       </p>
+       <p>
+         This review will aim to substantiate the progress in synthesising CNTs and the constructs that are formed. In the process of synthesising SWCNT and MWCNT the methods utilised to achieve both will be explored determining any significant chemical property variances between them depending on the method used. CNTs can assume three different structural forms, these will be dictated by the synthesis method and will be analysed against the potential functionalisation methods to determine if there are favourable constructs for the end product.
+       </p>
+       <p>
+         Functionalisation of CNTs is paramount to achieve the capability of drug delivery. Through this, covalent and non-covalent methods of functionalisation will be looked at in depth. The mechanisms of oxidation to achieve carbonyl and carboxylic groups will be evaluated against other known methods for bonding various molecules. As electrons will be the driving force of this mechanism the electrical properties of the CNTs will be described also. Through non-covalent bonding the π-π interactions will be evaluated in relation to electron arrangement that allow for the coupling between CNTs and active groups. As these mechanisms are reviewed it will be shown how CNTs overcome their toxicity and hydrophobicity allowing them to become utilised in pharmaceutical applications.
+         </p>
+       <p>
+         Functionalisation of CNTs is paramount to achieve the capability of drug delivery. Through this, covalent and non-covalent methods of functionalisation will be looked at in depth. The mechanisms of oxidation to achieve carbonyl and carboxylic groups will be evaluated against other known methods for bonding various molecules. As electrons will be the driving force of this mechanism the electrical properties of the CNTs will be described also. Through non-covalent bonding the π-π interactions will be evaluated in relation to electron arrangement that allow for the coupling between CNTs and active groups. As these mechanisms are reviewed it will be shown how CNTs overcome their toxicity and hydrophobicity allowing them to become utilised in pharmaceutical applications.
+       </p>
+    </article>
+    </section>
+
+      <section class="main-section" id="Structure_and_Properties_of_CNT's">
+    <header>Structure and Properties of CNT's</header>
+     <article>
+       <p>
+         CNTs are made up of rolled graphene sheets which exhibit a distinct 6-Carbon honeycomb appearance, with evident fullerene caps on each end of the tube. They can be synthesised into two distinct forms; SWCNTs and MWCNTs, the latter is defined by having two or more concentric rings on the outside of the last as shown by Figure 2.1.  These rings are separated by an anulus which vary in distance between 0.33nm and 0.39nm which are related as the tube diameter increases as does the inter-CNT space as shown by Dresselhaus, M. S. et al (1997). This formation is affected directly by the curvature of the CNT and as it grows the electrostatic forces in Van Der Waals (VDW) become less effective due to the decrease in significant dipole moments.
+       </p>
+       <p>
+         <code>
+         <img src="https://www.dropbox.com/s/dzzs67hjco3nces/Figure%202.1%20Image%20of%20MWCNT.png?raw=1" alt="A MWCNT">
+         </code>
+         <code>
+         <img src="https://www.dropbox.com/s/7x0eb5r8tjghtpz/Figure%202.2%20Image%20of%20SWCNT.jpg.png?raw=1" alt="A SWCNT">
+         </code>
+       </p>
+       <p>
+         CNTs can be synthesised into three different structural conformations; Zigzag, Armchair and Chiral. These structures are recognised as the chirality of the CNT displaying stereoisomerism due to the change in angles of the vectors.</p> <img src="https://www.dropbox.com/s/40kdn3aeh561upk/Figure%202.3%20Indicies%20of%20Geometric%20Arrangement.png?raw=1" alt="Indicies of Geometeric Arrangement">
+       <p>Identifying the vectors that they present shown by Fredriksson, T. (2014) displays the chirality vector denoted by:<br><br>
+         <code>
+           <img class= "formula" src=" https://www.dropbox.com/s/a30evzsu722e8ah/Formula.PNG?raw=1" alt="Indicies Formula">
+         </code><br><br>
+           Illustrated by Figure 2.2 and 2.3. The geometric arrangement is represented by indices (m,n); m = 0 (Zigzag),  n = m (Armchair), anything else is classified as chiral. These arrangements influence the electrical properties of the resulting structure. Due to this feature all armchair type configurations are considered metallic type and the others are semiconducting. These features are defined by the type of π electron present and influencing the structure due to its sp2 geometric arrangement. These types of arrangements will allow for repulsive and attractive interactions between the concentric rings of a MWCNT influencing its ability to be functionalised, it can be determined that the spacing between the concentric rings fluctuates due to the increase in change in angle of the π electrons as the curvature of the CNT is increased at lower diameters. Nizam, R (2015) showed us that Band gaps in electrons of semiconducting CNTs decrease as their overall diameter increases showing an inverse relationship. The band gaps related to the separation of electrons in a valance position compared to a conducting one. It could be hypothesised that these band gaps will have an area where electrical charge = zero. Thus, indicating that electron occupancy is impossible. This in turn could result in the hybridisation of the π and π* electrons, indicating an energy change which would result to an increased intramolecular bond length due to the higher energy making it more reactive.
+       </p>
+       <p>
+         There is strong evidence that from the work Lu, X et. al. (2005) that due to these electrical characteristics that the reactivity of armchair configured CNT will be more reactive than either chiral or zigzag, this may then need consideration when functionalising CNT for the purpose of drug delivery. These properties are of importance due to the polarisation of the CNT, the conjugated π electrons will display characteristics of potential high/low spin described by orbital bond theory as they will look to remove degenerate states. This will impact on the loading capacity of the CNT via either method of functionalisation.
+       </p>
+       <p>
+         Due to the arrangement of atoms in CNTs and the bonding already described, this allows for a high tensile strength in the sp2 arrangement and is stronger than sp3 which is encountered in diamond. These arrangements in CNTs also account for the hydrophobic nature they display but also lead to the issues of dispersing in different mediums which require the need for functionalisation to allow them to be usable in a biological application. Further to this there are toxicological difficulties in that impurities present within with CNT, a contradiction to this is that highly purified CNTs can exhibit the same effect which influence an increase in active ROS which initiates an immune response to damaged cells as a consequence.
+       </p>
+       <p>
+         The main differences that could determine the main choice of CNT for drug delivery is that SWCNT will display one type of chirality, this will fix the properties of the CNT within a certain scope depending on the resulting length and diameter of the end product. With MWCNT they can show alterations between chirality between each shell. Each variation would alter the electronic properties of every MWCNT all with very similar properties but a unique fingerprint. This could lead to SWCNT being favoured as a choice for drug delivery.
+       </p>
+        </article>
+    </section>
+
+    <section class="main-section" id="Synthesis_of_CNT's">
+    <header>Synthesis of CNT's</header>
+     <article>
+       <p>	Synthesis of CNTs has been much refined over the last decade, the most common of the methods will be reviewed with the idea of indication to the most suited for the purpose of drug carrying f-CNTs. There are a series of issues relating to the synthesis of CNTs, during the process either metal catalysts used to create them may leave fragments within the CNT body or amorphous carbon can be generated. An extension to this from Vasilli, I. et al. (2014) discusses how the chirality is determined through the process and locked after the initial formation of the fullerene. It is highly probable that the properties of the catalyst will provide different kinetic energies required to favour a particular indicial formation. This could lead to highly selective synthesis methods ensuring that the yields are sufficiently high of CNTs of a particular chirality. These processes require further manipulation to allow for purification for the removal of impurities from the structure, but in doing so will lead directly on to functionalisation. Eatemadi, A et al (2014) Summarises the three main synthesis methods that will be evaluated for the purpose of SWCNT and MWCNT synthesis in table 3.1:
+       </p>
+       <p>
+         <code>
+         <img src="https://www.dropbox.com/s/q97rw08lvucsfzn/Table%203.1%20Summary%20of%20utilised%20CNT%20Synthesis.png?raw=1" alt="Summary of utilised CNT synthesis methods">
+         </code>
+       </p>
+       <p>
+       <h2>Chemical Vapor Deposition (CVD)</h2>
+	This is the most ascribed method for synthesising CNTs, there are many versions of this method as described by Iijima, S. (1991) relating to oxygen assisted and plasma enhanced methods, Dervishi, E. et al (2009) describes using a ‘Hot filament’ version where as the most used method relates to catalytic CVD (CCVD). The most notable method so far is utilising CCVD in the presence of water vapor.
+       </p>
+       <p>
+          It is discussed with Eatemadi (2014) that SWCNTs require a catalyst for successful synthesis where as MWCNT do not, this does not exclude the fact that MWCNT can be grown in the presence of a catalyst under the right conditions. This method of catalyst growth could be a control for the stereochemistry and reactivity properties of the CNTs. CVD can utilise hydrocarbons in many forms but principle relies on hydrocarbon vapor being passed across a preselected catalyst bound to a substrate. It is this complex that pre-determines what growth mechanism the CNT will take, there are two known pathways being continual or stopped upon saturation; these principles are known as the ‘tip growth model’ and ‘base growth model’ as in Figure 3.1 below:
+       </p>
+       <p>
+         <code>
+         <img src="https://www.dropbox.com/s/m0eicxn5s4q5qpp/Figure%203.1%20Growth%20Models.png?raw=1" alt="Growth Models">
+           </code>
+       </p>
+       <p>
+         There is a contradiction in the growth mechanisms relating to that SWCNT have been mentioned to only grow via the base growth method, Fotopoulos, N. (2010) however in the work of Kumar, M (2010) this is disregarded and the works go on to mention that the size of the catalyst particle is responsible for the differentiation between SWCNT and MWCNT. In light of this determining on what CNT is to be grown the; catalyst, substrate, temperature, vaporising pressure and the carbon source are all very important in determining the structure synthesised. CCVD allows for many variables to be controlled and with the result of water vapor being present increasing the yield and catalyst life span, this method is very useful and is understandably widely used.
+       </p>
+       <p>
+      <h2>Laser-Ablation </h2>
+	This method is widely accepted at being able to provide high yields of CNTs with a low contamination figure. The mechanism behind this synthesis is to target the carbon source with a laser either YAG or CO2 in the presence of a metal catalyst, this catalyst will play a role in determining the properties of the CNT generated. The control of the laser is paramount to the success of CNT growth as discussed by Sinnott, S.B. (2001). Again, with Eatemadi, A. et al (2014) it is shown that the power of the laser can control the diameter of the CNT which has already been discussed to have a huge influence on the properties of a CNT. The issues lying with laser ablation despite its success is the level of deformity that can occur and the high temperature and power required may make this financial unviable. In relation to creating viable carriers it may lack the diversity and flexibility required to synthesise SWCNT or MWCNT of adequate property types.
+       </p>
+       <p>
+    <h2>Arc-Discharge </h2>
+	Arc-discharge uses two water cooled electrodes in a preselected atmosphere. The gas chosen has been shown to affect the formation of the CNTs and a significant change in yields of MWCNTs produced Shimotani, K. et al (2001), these works focused on the use of organic gasses that they have now attributed to the selective growth of MWCNT. Arc-discharge is capable of producing SWCNT which are selected in the process in exposure to a transition metal. The choice in transition metal have baring on reaction temperatures of the synthesis, it is this restriction that prevents the formation of MWCNT in the process and favours that of SWCNT, this could be postulated that the drop out temperature of the organic gas is altered due to this effect. However, the aspects of the size of CNT developed are also determined by this process and have a direct effect to the electrical properties associated with the type of CNT yielded. There is a contradiction to this theory in that it has been reported in several cases one by Kim, H. H. (2006) in that it was reported that MWCNT formed in the presence of a catalyst. In this instance it would be wise to disseminate the synthesis parameters for any significant variation in method.
+       </p>
+       <p>
+         <h2>Conclusion</h2>
+	In light of all the discoveries made by all the mentioned authors CCVD so far appears to be the best principle to apply for the synthesis of CNT. It has highlighted different issues still currently debated in the field and the best practice methods are still to be publicised. There are various contradictions to methods which is inevitable in a field that is relatively still in its infancy of progression. Key parameters are beginning to be identified in terms of stereochemistry and the properties that best suit varying applications. There is however, an apparent oversight in the effect of a crystal field theory (CFT) like mechanism in the use of catalysts. The formation of SWCNT’s due to the differing physisorption of electron wave functions with different transition metals could play a huge role in the determination of the chirality of the CNTs produced. This overlapping of electrons could potentially produce a dynamic model of CFT explaining some of the electrical and physical properties exhibited by CNT’s. Moving on from this will lead into functionalisation of CNT with the blueprint of therapeutic use in mind.
+       </p>
+      </article>
+    </section>
+
+         <section class="main-section" id="Functionalisation_of_CNT's">
+    <header>Functionalisation of CNT's</header>
+     <article>
+       <p>
+         Functionalisation of SWCNT and MWCNT is one of a selection of methods shown to alleviate the issues surrounding conjugation, toxicity, hydrophobicity and biocompatibility. The alternative approaches are; surfactant-assisted dispersion, biomolecular dispersion, and solvent dispersion; Zhang, W. (2011) In the proposed mechanisms of using CNTs as a carrier intermediate, it is essential that they become functionalised, not to only overcome the incompatibility of biological interaction but to be able to bind sufficiently strong enough to carry a pharmaceutical agent. Functionalisation can begin with CNT purification. This is due to some of the wet methods to remove the impurities, the methods vary and will alter the CNT structure to one of an oxidised state. A number of purification techniques lead directly onto covalent functionalisation by the removal of fullerene capped ends and the addition of carboxylic groups on the fractured extremity in contrast to the alternative of non-covalent functionalisation via π-π stacking and VDW forces. The system of functionalisation will be inherent to the success of pharmokinetics due to the different bonding energies and thermodynamic stability of the reaction to release the drug at the appropriate location if at all. The ability of the CNT to release the therapeutic could be controlled via functionalisation with the activated release of the drug due to targeted receptors producing a favourable thermodynamic forward reaction. Alternatively, it may just provide the platform for ligand-receptor based activation of cytokines or induce a thermo-responsive reaction at the target site.
+       </p>
+      </article>
+    </section>
+    <section class="main-section"     id="Covalent_Functionalisation">
+    <header>Covalent Functionalisation</header>
+     <article>
+       <p>
+         Covalency comes from the strong bond formed between two atoms at a subatomic level. CNTs, as already discussed have rather unique properties, after exposure to certain purification techniques it has been demonstrated numerous times by various authors that the ends and defect sites of CNTs can become oxidised in the form of carboxylation. This kind of functionalisation will affect chirality properties differently in that the armchair isomer will change its electronic structure (band gap) due to a change from a sp2 structure to a sp3. The key to inter-functional group changes will be the selectivity of the group to the molecule intended to tether to it. It is important that retrosynthesis methodology is applied. For the purpose of drug attachment, the reduction of alcohol and aldehyde groups should be considered to carbonyl groups with the ‘Baeyer-Villiger’ mechanism for the creation of esters.
+       </p>
+       <p>
+       <h2>Oxidation Reactions</h2>
+These reactions involve using strong acids such as H2SO4 and HNO3 they will attack the double bonds present, essentially the π bond present in the double bond between that of the carbon atoms is utilised, oxygen from the acid behaves as a electrophile to the carbon forming an alcohol group followed by an aldehyde then a carboxylic group. This method is also part of a purification step post synthesis, so depending on the procedure followed this step may occur regardless. The presence of the oxygen baring groups is advantageous for attaching moieties under a strong stable bond. In addition to this possibility, the addition of these derivatives to the framework of a CNT will reduce the hydrophobicity, decrease toxicity and increase its solubility in a biological medium due to its change in charge.
+       </p>
+        <p>
+    <h2>Cycloadditions</h2>
+These reactions provide a unique opportunity to functionalise CNTs with peptides and amino acids bridging the gap for applications such as drug carrying for medical purposes. Lu, X. (2005) demonstrates the versatile 1,3-dipole cycloaddition (1,3-DC) to a SWCNT utilising the ‘Prato Method’. Essentially this is the condensation of an amino acid and paraformaldehyde. This goes on to synthesise an azomethine ylide, with further treatment it can expose the amino group of the functionalised SWCNT, leading on to direct covalent bonding to pharmaceuticals or with an intermediate such as targeted ligands, which will be part of the specific site targeting required for the CNTs to be used in drug delivery. One of the key properties that could be of benefit it the potential that the 1,3-DC reaction in conjunction with a pyrene present could significantly lower the functionalisation temperature due to structural changes incurred when approaching a CNT (Cardona, C.M. (2006)) The pyrene molecule is laced with double bonds and as a result a highly dense electron cloud of π electrons, if the CNT wall has an oxidised side wall this would favour strong hydrogen bonding with better kinetics.
+  </p>
+    <p>
+    <h2>Covalent Functionalisation Conclusion</h2>
+As already mentioned, the defects associated with covalent bonding to CNT changes the initial properties that make them attractive as carrying molecules in a biological sense. The introduction of defect sites due to the harsh conditions alter the structural properties of CNT be it SWCNTs or MWCNTs. Coupling this with every covalent bond comes a change to the sp2 model evolving to a sp3 model, what this change means is that the delocalised π electron system is interrupted altering the electrical properties of the CNT hence the band gap representing valence electrons. As a consequence, this may alter the scope to what is achievable in a drug delivery mechanism.
+In reflection to this the covalent bond produced will allow for further manipulation and allowing for a strong bonding energy between the functional group and the pharmaceutical to be attached. Having oxidised CNTs will allow for further reaction and in this case the need for amidation and the process of esterification could be an essential requirement for the tethering of bio-compatible molecules. Modifying CNTs in such a way that the COOH group is altered to terminate with an amide present endless opportunities including an increased residence time within a blood stream due to less reactive properties. This will have a direct effect on efficacy of drug delivery especially in the instance of pH sensitive and ligand receptor release mechanisms.
+    </p>
+  </article>
+</section>
+
+<section class="main-section" id="Non-Covalent_Functionalisation">
+    <header>Non-Covalent Functionalisation</header>
+     <article>
+       <p>
+         Non-covalent functionalisation can be divided into two main Sections; π-π stacking which allows for the electrostatic interactions between conjugated π- π electrons, polymer wrapping which utilises the inherent nature of biomolecules in their hydrophobic and hydrophilic characteristics. The distinct variation between non-covalent and covalent is the residual effect to the CNT in relation to its own properties. Non-covalent interaction do not create vacancies within the structure which lead on to the alteration of mechanical and electrical properties of the CNT.
+       </p>
+       <p>
+       <h2> π-π Interactions</h2>
+Fu, X. (2016) discusses in depth the analysis of π-π interaction of a benzene dimer illustrating the underlying principle behind the mechanism. It demonstrates the interaction of the frontal orbitals in that the presence of degenerate and non-degenerate states exist and hybridise to form bonding and antibonding orbitals. Figure 4.1 shows the overlap in electron density within a benzene dimer. Indicating that upon the systems approaching close proximity the spatial geometry for the electrons becomes deformed allowing for these overlaps.
+       </p>
+  <p>
+    <img src="https://www.dropbox.com/s/2xajwpzkf6cqj98/Figure%204.1%20DOS%20showing%20orbital%20superimposition.png?raw=1" alt="DOS showing orbital superimposition">
+  </p>
+  <p>
+    This would indicate that the London-dispersion-force has a part to play in the π-π interaction meaning induction of dipole moments allowing for the bond to occur. It is concluded that for a π-π interaction to occur with sufficient strength the energy levels of the molecules intended to bond with a CNT in this manner must be close to equal in energy and that the delocalisation of bonding and anti-bonding orbitals must be substantial. In knowing this, the selection of drugs that can be directly bound to the CNT framework will have to highly specific and may limit the range of molecules that would be available for this approach. However, the functionalisation with amphiphilic peptides would show great promise, it was shown by Su, Z. et al. (2007) that the peptide ‘Tryptophan’ bonded in this manner in that the highest occupied molecular orbital hybridises with the lowest unoccupied molecular orbital on the SWCNT being the anti-bonding sigma bond. This kind of bonding will then allow for selective tethering with designated drugs ensuring that it is not released until further reaction with specific receptor.
+  </p>
+  <p>
+  <h2>Polymer Wrapping</h2>
+Fujigaya, T. (2015) go on to discuss in depth the enthalpy driven reaction of designer polymer-wrapping. The synthesis of this method is simple in comparison to others in that mixing of the reactants via sonication is enough to create the bond and can then be washed to remove excess polymer. It has been shown by additional authors Nish, A. et al (2007) that selecting the polymer also preferentially selects the type of CNT chirality that it binds to allowing this to be isolated from other isomers. This characteristic is highly desired in the separation of semi-conducting CNTs from metallic ones. This would allow for a much more detailed evaluation on the preference for drug loading on the three discussed isomers of CNTs.
+The bonding of polymers is directly related to the π-π interaction discussed above with the difference that it shrouds the CNT. Using the polymers in dual form can liberate a tuning mechanism by having varying affinities for drug loading and release as discussed by Zhang, X. et. al. (2009)
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section"     id="Drug_Loading_onto_f-CNT's">
+    <header>Drug Loading onto f-CNT's</header>
+     <article>
+       <p>
+         Drug loading onto CNTs needs to consider various factors; drug loading capacity, mechanism of controlled release and site targeting coupled with how the CNT’s are to be removed from the body safely. How the controlled release of the drug is achieved will determine the efficacy of the drug at the proposed target. It will predetermine the reduction of pre-release within the blood ensuring that degradation does not occur before its intended use. These conditions will determine the type of functionalisation and CNT type that may be best suited. It is unlikely that there will be one for all but certain parameters maybe met for different systems depending on the cell barrier they are intending to cross.
+       </p>
+       <p>
+         Saikia, N. et. al. (2013) demonstrate profoundly the ability of using the drug ‘pyrazinamide (PZA)’ to interact with the SWCNT via the π-π interaction. This method removes an intermediate functionalisation group as it directly associates with the SWCNT. This particular piece of work is of great interest as the work compares the very nature of CNTs in their chirality and the residing effects of electronic structure and leaves ground for thermodynamic calculations to be directly linked to the orbital theory for preferential bonding of therapeutics. In referring back to π-π interactions it allows for a distinction between armchair and zigzag conformations in that due to the sp2 bonding angles of the CNT. The bonding to the armchair formation leads to high reactivity and more favourable bonding energy due to the parallel alignment of the PZA with the SWCNT. The dipole moment induced by the zigzag CNT results in an orientation difference with the bonding molecule. This itself makes bonding energy weaker, in relation to hybridization of the p orbitals that allows for this interaction, the parallel alignment allows for the maximum exposure possible thus occupying the bonding and anti-bonding orbitals. The key element to this in terms of non-covalent bonding via π-π interactions is the offloading of the drug being easier with a low absorption energy being required through the armchair binding. In this instance it is providing good evidence that armchair SWCNT will be preferred for π-π interactions due to the electronic properties illustrated by the band gap and resulting stereochemistry being thermodynamically favourable. It could be assumed in this instance that polymer wrapping should show similar characteristics but will have other variables to consider before final inclusion in this evaluation.
+       </p>
+       <p>Polymer wrapping whilst variations will bond to the CNT via π-π interactions, as previously mentioned can have electrostatic interactions due to the nature of the polymers. Having the polymers as carbohydrates showed varying results and a combination of sodium alginate (ALG) and chitosan (CHI) showed great control of the drug loading and release mechanisms by Zhang et al. (2009). The unique properties of the drug loading in this instance is that the polymer wrapping plays a larger role in change of the electronic configuration of the CNT due to the properties of the carbohydrates. Figure 5.1 shows the molecule doxorubicin hydrochloride (DOX), this drug can interact with CNT via the π-π interactions normally however, it is sterically hindered and thus has a limited loading capacity via this method. The change in the polarity in the CNT due to the polymer wrapping has greatly increased the loading capacity making the vessel highly concentrated. The complex of the dual wrapping showed in the work the capability of mixed ionic charge in increasing this capacity. In doing so they have made the CNT more kinetically stable, this property then made the molecule pH sensitive accounting for a controllable release in the sites of lower pH.
+       </p>
+       <p>
+         <img src="https://www.dropbox.com/s/y5s2oc9n14yui24/Doxorubicin%20Hydrochloride%20Molecule.png?raw=1" alt="Doxorubicin Hydrochloride Molecule">
+       </p>
+       <p>
+         Polymer wrapping can also lead to an interesting functionalisation in that endohedral filling of the CNT with either a standard drug or a prodrug can be achieved. This mechanism is not exclusive to polymer wrapping as oxidised CNT are capable of this however the residing effects of the change in electronic distribution caused by the polymer can have beneficial effects. The internalisation of the drug would require the COOH groups to be present at the ends of the CNT and the drug it self would need to present hydrophobic properties to reside within. The mechanism of filling the CNT will be dependent on the CNT diameter and the chirality of the structure. The effects of surface tension will aid the filling but the polymer should be the instigating force behind the release of the drug. Changes in the chemical environment such as pH will affect the binding of the polymer, this in turn will change the localisation of the conjugated π electrons to redistribute around the CNT this will activate a polarisation changing the electronegativity within the CNT systematically pushing the drugs out once activated.
+         </p>
+       <p>
+         Within the functionalisation of oxidised CNT utilisation of the COO- groups is quite common practice where a secondary chemical can be used as a bridge. With the amidation of a drug covalently to a CNT will potentially lead to the same mechanism seen in peptide bonds. The difference in this mechanism is that an external energy source would be required for this bond to occur as adenosine triphosphate (ATP) is used in organic mediums to perform this mechanism. The most likely occurrence for this would be the presence of radical species deviations of the amide compound.
+Cycloaddition as already discussed pose an interesting method of tethering drugs as it will increase the variability to what can be attached. The exposure of an amino group can allow for ligand-drug complexes to be tethered to CNTs; the benefit is that the ligand can release the drug upon secondary binding with specific proteins. This could extend to the G-protein coupled receptors located within cells to which the drug would not normally come into contact with. The ability of CNT to be endocytosed by cells in this manner will drastically improve the efficacy of drugs and the residing outcomes.
+       </p>
+    </article>
+</section>
+
+         <section class="main-section"     id="Conclusion">
+    <header>Conclusion</header>
+     <article>
+       <p>
+         The efficacy differences in drug delivery via CNTs is difficult to determine, this is due to the structure of CNTs having a signifying effect on the loading capacities and release mechanisms of pharmaceuticals. For a fair conclusion it would need to be subjected to one variable change where here there are many conflicting ones. From the works of the authors presented here its can be noted that SWCNT appear to have a much more defined property base due to having one type of chirality as appose to MWCNT having varying types within one structure.
+       </p>
+       <p>
+         Functionalisation has demonstrated its own requirement for biological application and the changes in the CNT fundamental framework can have detrimental effects for toxological, hydrophobic and the need to separate from bundles. π- π interactions be it directly or via polymers show tremendous promise as they maintain the framework and endless potential for different moieties, with the capability of endohedral filling and controlled release mechanisms. This interaction is amplified with the varying band gaps exhibited from the chirality differences of the CNTs backbone.
+       </p>
+       <p>
+         In comparison to the covalent approach which has many benefits and its strong interaction via hydrogen bonds and esterification directly to the CNT, it compromises the integrity of the CNT by changing the electronic and mechanical properties. The bonding of pharmaceuticals to the CNT in this manner will required higher activation energies in release.
+       </p>
+       <p>
+         It would appear that the key synthesis methods would be to produce CNT via CCVD and to follow up with π-π interactions allowing for selective chirality of the armchair SWCNT. This method will allow for controlled drug affinity and release dependant on its application.
+         </p>
+       <p>
+         This paper has systematically answered its objectives however, leaving underlying questions relating to the geometric differences in CNTs and what that may potentially restrict or benefit for targeted drug loading.
+       </p>
+           </article>
+</section>
+<section class="main-section"     id="References">
+    <header>References</header>
+     <article>
+       <p>
+         Cardona, C. M., Elliott, B. and Echegoyen, L. (2006) ‘Unexpected chemical and electrochemical properties of M3N@C80 (M = Sc, Y, Er)’, Journal of the American Chemical Society, 128(19), pp. 6480–6485. doi: 10.1021/ja061035n.
+</p>
+         <p>
+	Dervishi, Enkeleda et al. (2009) ‘Carbon Nanotubes: Synthesis, Properties, and Applications’, Particulate Science and Technology. Taylor & Francis Group, 27(2), pp. 107–125. doi: 10.1080/02726350902775962.
+</p>
+           <p>
+Dresselhaus, M.S.  Sun, X. Zeiger, H. J.  Kiang, C-H. and M.Endo (1997)  ‘Model for interlayer spacing of multiwall carbon nanotubes’ Twenty Third Biennial Conference on Carbon. Pennsylvania State University, USA, [Online]. Available at: http://acs.omnibooksonline.com/data/papers/1997_ii386.pdf
+</p>
+             <p>
+Eatemadi, A. et al. (2014) ‘Carbon nanotubes: properties, synthesis, purification, and medical applications’, Nanoscale Research Letters. Boston: Springer US, 9(1), pp. 1–13. doi: 10.1186/1556-276X-9-393. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141964/
+</p>
+               <p>
+Fotopoulos and Xanthakis (2010) ‘A molecular level model for the nucleation of a single-wall carbon nanotube cap over a transition metal catalytic particle’, Diamond & Related Materials. Elsevier B.V., 19(5), pp. 557–561. doi: 10.1016/j.diamond.2010.01.029.
+</p>
+                 <p>
+Fredriksson, T. (2014) Carbon Nanotubes: A Theoretical study of Young’s modulus [Online] Karlstad, Sweden, Faculty of Health, Science and Technology: Department of engineering and physics, Karlstad University, Available at: http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A722664&dswid=5993 Accessed on 28/04/19
+</p>
+                   <p>
+	Fu, X.-X., Li, J.-F. and Zhang, R.-Q. (2016) ‘Strong Orbital Interaction in pi-pi Stacking System’ [Online]., Hong Kong, China, Department of Physics and Material Science, Lynyi university 276005, Available at: https://arxiv.org/ftp/arxiv/papers/1601/1601.01150.pdf accessed on 01/08/19
+                     </p>
+
+                     <p>
+Fujigaya, T. and Nakashima, N. (2015) ‘Non-covalent polymer wrapping of carbon nanotubes and the role of wrapped polymers as functional dispersants’, Science and Technology of Advanced Materials. Taylor & Francis, pp. 024802/1–024802/21. doi: 10.1088/1468-6996/16/2/024802.
+</p>
+                       <p>
+Kim, Hyeon Hwan and Kim, Hyeong Joon (2006) ‘The preparation of carbon nanotubes by dc arc discharge using a carbon cathode coated with catalyst’, Materials Science & Engineering B. Elsevier B.V., 130(1-3), pp. 73–80. doi: 10.1016/j.mseb.2006.02.072.
+                         </p>
+
+                         <p>
+Kumar, M. Ando, Y. (2010) ‘ Chemical Vapor Deposition of Carbon Nanotubes: A Review on Growth Mechanism and Mass Production’ Journal of Nanoscience and Nanotechnology, vol. 10, pp. 3739-3758 [Online] Available at: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.459.5003&rep=rep1&type=pdf Accessed on 29/06/19.
+                           </p>
+
+      <p>
+Lu, X. and Chen, Z. (2005) ‘Curved pi-conjugation, aromaticity, and the related chemistry of small fullerenes (less than C60) and single-walled carbon nanotubes.’, Chemical reviews, pp. 3643–96. doi: 10.1021/cr030093d.
+        </p>
+
+                                                                                                                     <p>
+	Nizam, R. Sehban, M. M. (2015) ‘Calculating the Band Gaps of Perfect Carbon Nanotube through Tight Binding Method’ International Journal of Science and Research, Vol 6, no. 1 [Online] Available at https://pdfs.semanticscholar.org/d64f/3331d63a7ed7e5a5a136860cf3b522347abf.pdf
+                             </p>
+
+                             <p>
+	Pantarotto, D. et al. (2004) ‘Translocation of bioactive peptides across cell membranes by carbon nanotubes.’, Chemical communications (Cambridge, England), (1), pp. 16–7. (Accessed on 15/06/19) Available at: https://pubs-rsc-org.libezproxy.open.ac.uk/en/content/articlelanding/2004/CC/b311254c#!divAbstract
+                               </p>
+
+    <p>
+	Patil, R. (2016) ‘Multiwalled Carbon Nanotubes’ Rajaram Patil Blog, 15th December [Blog] Available at: http://rajarampatilblog.webpin.com/blog_multi-walled-carbon-nanotubes.html (Accessed 24/06/19)
+      </p>
+
+      <p>
+	Prasek et al. (2011) ‘Methods for carbon nanotubes synthesis—review’, Journal of Materials Chemistry, 21(40). doi: 10.1039/c1jm12254a.
+        </p>
+
+        <p>
+	Saikia, N. and Deka, R. C. (2013) ‘A comparison of the effect of nanotube chirality and electronic properties on the π–π interaction of single‐wall carbon nanotubes with pyrazinamide antitubercular drug’, International Journal of Quantum Chemistry. Hoboken: Wiley Subscription Services, Inc., A Wiley Company, 113(9), pp. 1272–1284. doi: 10.1002/qua.24275.
+          </p>
+
+          <p>
+	Shimotani et al. (2001) ‘New synthesis of multi-walled carbon nanotubes using an arc discharge technique under organic molecular atmospheres’, Applied Physics A. Berlin/Heidelberg: Springer-Verlag, 73(4), pp. 451–454. doi: 10.1007/s00339010082
+       </p>
+            <p>
+	Sinnott, S. B. and Andrews, R. (2001) ‘Carbon Nanotubes: Synthesis, Properties, and Applications’, Critical Reviews in Solid State and Materials Sciences. Taylor & Francis Group, 26(3), pp. 145–249. doi: 10.1080/20014091104189.
+              </p>
+
+              <p>
+	Sumio Iijima (1991) ‘Helical microtubules of graphitic carbon’, Nature. Nature Publishing Group, 354(6348), p. 56. doi: 10.1038/354056a0
+                </p>
+
+                <p>
+	Su, Z. et al. (2007) ‘Single-walled carbon nanotube binding peptides: probing tryptophan's importance by unnatural amino acid substitution’, The journal of physical chemistry. B, 111(51), pp. 14411–14417. doi: 10.1021/jp0740301.
+                  </p>
+
+                  <p>
+	Vasilii I/ Artyukhov, Evgeni S. Penev and Boris I. Yakobson (2014) ‘Why nanotubes grow chiral’, Nature Communications. Nature Publishing Group, 5(1), p. 4892. doi: 10.1038/ncomms5892.
+                    </p>
+<p>
+Zhang, Wuxu, Zhang, Zhenzhong and Zhang, Yingge (2011) ‘The application of carbon nanotubes in target drug delivery systems for cancer therapies’, Nanoscale Research Letters. New York: Springer-Verlag, 6(1), pp. 1–22. doi: 10.1186/1556-276X-6-555.
+  </p>
+<p>
+Zhang et al. (2009) ‘Targeted delivery and controlled release of doxorubicin to cancer cells using modified single wall carbon nanotubes’, Biomaterials. Elsevier Ltd, 30(30), pp. 6041–6047. doi: 10.1016/j.biomaterials.2009.07.025.
+</p>
+  </article>
+</section>
+
+</main>
+
+
+
+
+
